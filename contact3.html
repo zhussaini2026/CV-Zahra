@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h3 {
+            text-align: center;
+            color: rgb(124, 84, 10);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: rgb(124, 84, 10);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #a07308;
+        }
+        .main-page-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            text-decoration: none;
+            color: rgb(124, 84, 10);
+        }
+        .main-page-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:z.hussaini2026@gmail.com" method="post">
+        <h3>Contacts</h3>
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required>
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="message">Any Message</label>
+        <textarea rows="9" cols="30" name="message" id="message" required></textarea>
+        <input type="submit" value="Send">
+        <a class="main-page-link" href="index.html">Main Page</a>
+    </form>
+</body>
+</html>
+
